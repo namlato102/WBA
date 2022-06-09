@@ -1,0 +1,22 @@
+table, th, td { 
+    border: thin solid;
+    border-collapse: collapse; 
+    margin-left: auto;
+    margin-right: auto;
+}
+caption{
+    font-weight: bold;
+}
+th {
+  
+  text-align: left;
+}
+td {
+  text-align: center;
+}
+tr:nth-child(even) {
+    background: #DDDDDD
+}
+tr:nth-child(odd) {
+    background: #BBBBBB
+}

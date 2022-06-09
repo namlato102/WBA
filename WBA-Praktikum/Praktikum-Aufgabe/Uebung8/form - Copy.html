@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+      <title>Aufgabe 1</title>
+      <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=i9RpZ6gYQWsSwy25bT3WPi_7WzZn865KyZJOpEauvQLR9ep5nO2VtSnjXwI2QQnCbv2qDLIj-Y0k5ZYPBgDn3hee3NO0MPsULpWOvQjdWw_nXMd_9YLkHvUz2HulWwQG" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly93YmEuY3MuaHMtcm0uZGUvUHJhR0EvYWpheC9hYmdhYmUucGhwP29wdGlvbj0yJmF1ZmdhYmU9MjAyJnNnPTIyMzA"/><style>
+          table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+          }
+
+          .price{
+            width: 50px; 
+            background-color:#A9A9A9;
+            border-radius: 5px;
+            text-align: right;
+          }
+      </style>
+    </head>
+    <body>
+        <script src="server.js"></script> 
+        
+        
+        
+        <table id="myTable" style="width:100%">
+            <tr>
+              <th>Flaschen</th>
+              <th style="text-align:left;">Weinname</th>
+              <th>Einzelpreis</th>
+              <th style="text-align:right; width: 50px;">Preis</th>
+            </tr>
+            <tr>
+              <td><input id="s1" style="width: 30px;" name="Flaschen" value="0"></td>
+              <td>Marienthaker stiftsberg Rotweincuvée</td>
+              <td id="s1_price" style="text-align:right;">3.60</td>
+              <td><input id="s1_out" class="price" name="Preis" value="0.00" readonly></td>
+            </tr>
+            <tr>
+              <td><input id="s2" style="width: 30px;" name="Flaschen" value="0"></td>
+              <td>Riesling Classic</td>
+              <td id="s2_price" style="text-align:right;" >3.70</td>
+              <td><input id="s2_out" class="price" name="Preis" value="0.00" readonly></td>
+            </tr>
+            <tr>
+              <td><input id="s3" style="width: 30px;" name="Flaschen" value="0"></td>
+              <td>Silvanner Selection Reinhessen</td>
+              <td id="s3_price" style="text-align:right;">6.90</td>
+              <td><input id="s3_out" class="price" name="Preis" value="0.00" readonly></td>
+            </tr>
+            <tr>
+              <td><input id="s4" style="width: 30px;"  name="Flaschen" value="0"></td>
+              <td>Domäne Avelsbach Riesling Sekt</td>
+              <td id="s4_price" style="text-align:right;" >6.15</td>
+              <td><input id="s4_out" class="price" name="Preis" value="0.00" readonly></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" name="Versand" id="versand_1"></label>
+                    </div>
+                </td>
+                <td>Versand DHL (bis 12 Flaschen)</td>
+                <td style="text-align:right;" >10.00</td>
+                <td><input class="price" type="text" id="price_dhl"  value="0.00" readonly></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" name="Versand" id="versand_2" checked></label>
+                    </div>
+                </td>
+                <td>Versand Spedition</td>
+                <td style="text-align:right;" >15.00</td>
+                <td><input class="price" type="text" id="price_spedition" value="15.00" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:right;" >Zwischensumme</td>
+                <td><input class="price" type="text" id="zwischensumme" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:right;" >MwSt</td>
+                <td><input class="price" type="text" id="mwst" readonly></td>
+              </tr>
+              <tr>
+                <th colspan="3" style="text-align:right;" >Summe</th>
+                <td ><input class="price" type="text" id="summe" readonly></td>
+              </tr>
+
+              
+          </table>
+    </body>
+</html>

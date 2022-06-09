@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Aufgabe 2</title>
+</head>
+<body>
+<h1>Form</h1>  
+<form action="form.php" method="post">
+    <fieldset>
+        <legend>Personal:</legend>
+        <p>Anrede:</p>
+        <input type="radio" id="Frau" name="Anrede" value="Frau" >
+        <label for="Frau">Frau</label>
+        <input type="radio" id="Herr" name="Anrede" value="Herr" >
+        <label for="Herr">Herr</label>
+        <br> 
+        <p>Nachname :<input type="text" name="name" required></p>
+        <p>Vorname :<input type="text"  name="vorname" required></p>
+        <p>Straße :<input type="text" name="Straße" ></p>
+        <p>Haus Nummer :<input type="number" id="nr" name="nr"></p>
+        <p>PLZ :<input type="number" name="PLZ" ></p>
+        <p>Stadt :<input type="text" name="Stadt"></p>
+        <textarea id="review" name="review" rows="20" cols="40" placeholder="Anmerkung"></textarea>
+        <br> 
+        <input type="submit" value="Senden" >
+    </fieldset>
+</form>
+</body>
+</html>
+
+p {
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}

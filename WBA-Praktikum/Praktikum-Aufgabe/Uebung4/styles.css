@@ -1,0 +1,29 @@
+#tower {
+    position: absolute;    
+    left: 45px;
+    top: 57.5px;
+}
+
+#building {
+    position: absolute;
+    left: 80px;
+    top: 70px;
+}
+
+#roof {
+    position: absolute;
+    top: 15.5px;
+    left: 43px;
+}
+
+#flag {
+    position: absolute;
+    top: 41px;
+    left: 120px;
+}
+
+#window {
+    position: absolute;
+    top: 66px;
+    left: 41pt;
+}
